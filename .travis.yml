@@ -18,12 +18,12 @@ before_install:
   - npm install
 
 script: 
-  - npm test
+  # - npm test
   - npm run docs:build
-  - npm run build
-  - npm run tampermonkey
-  - npm run pack
-  - cd build/cxmooc-tools && zip ../cxmooc-tools.zip -r ./ && cd ../../
+  # - npm run build
+  # - npm run tampermonkey
+  # - npm run pack
+  # - cd build/cxmooc-tools && zip ../cxmooc-tools.zip -r ./ && cd ../../
 
 deploy:
   # - provider: releases
