@@ -26,15 +26,15 @@ script:
   - cd build/cxmooc-tools && zip ../cxmooc-tools.zip -r ./ && cd ../../
 
 deploy:
-  - provider: releases
-    api_key: $GITHUB_TOKEN
-    file_glob: true
-    file: 
-      - build/*.crx
-      - build/*.zip
-    skip_cleanup: true
-    on:
-      tags: true
+  # - provider: releases
+  #   api_key: $GITHUB_TOKEN
+  #   file_glob: true
+  #   file: 
+  #     - build/*.crx
+  #     - build/*.zip
+  #   skip_cleanup: true
+  #   on:
+  #     tags: true
       
   - provider: pages
     skip_cleanup: true
